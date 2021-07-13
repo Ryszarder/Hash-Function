@@ -29,19 +29,20 @@ int main()
 	}
 
 	{
+		//Don't have a Player class
 		////Pointer
 		//Dictonary<Player*, const char*> hastTable;
 		//Player* p1 = new Player();
 		//Player* p2 = new Player();
 		//Player* p3 = new Player();
 
-		//hastTable.Add(p1, "16 Flindere St");
-		//hastTable.Add(p2, "34 Swanston St");
-		//hastTable.Add(p3, "22 Left St");
+		//hashTable.Add(p1, "16 Flindere St");
+		//hashTable.Add(p2, "34 Swanston St");
+		//hashTable.Add(p3, "22 Left St");
 
-		//std::cout << hastTable[p1] << std::endl;
-		//std::cout << hastTable[p2] << std::endl;
-		//std::cout << hastTable[p3] << std::endl;
+		//std::cout << hashTable[p1] << std::endl;
+		//std::cout << hashTable[p2] << std::endl;
+		//std::cout << hashTable[p3] << std::endl;
 	}
 	
 	{
