@@ -43,7 +43,7 @@ public:
 		unsigned int nHash = 0;
 		for (int i = 0; i < nSize; ++i)
 		{
-			nHash += (char*)&key[i];
+			nHash += ((char*)&key)[i];
 		}
 		return nHash;
 	}
