@@ -48,44 +48,6 @@ public:
 		return nHash;
 	}
 
-	/*void Add(const char* key, V value)
-	{
-		int nHash = Hash(key, sizeof(K));
-		int nIndex = nHash % m_nTableSize;
-
-		m_pData[nIndex].key = key;
-		m_pData[nIndex].value = value;
-	}*/
-
-	/*V& operator[](K key)
-	{
-		int nHash = Hash(key, strlen(key));
-		int nIndex = nHash % m_nTableSize;
-
-		m_pData[nIndex].key = key;
-		m_pData[nIndex].value = value;
-	}*/
-
-	/*V& operator[](const char* key)
-	{
-		int nHash = Hash(key, strlen(key));
-		int nIndex = nHash % m_nTableSize;
-
-		m_pData[nIndex].key = key;
-		m_pData[nIndex].value = value;
-	}*/
-
-	/*unsigned int Hash(const char* key, int nSize)
-	{
-		unsigned int nHash = 0;
-		for (int i = 0; i < nSize; ++i)
-		{
-			nHash =+ key[i]
-		}
-		return nHash
-
-	}*/
-
 private:
 	Pair* m_pData;
 	int m_nTableSize;

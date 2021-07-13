@@ -46,12 +46,13 @@ int main()
 	
 	{
 		//Float
-		//hastTable.Add(3.5f, "16 Flindere St");
-		//hastTable.Add(1.5f, "34 Swanston St");
-		//hastTable.Add(5.7f, "22 Left St");
+		Dictonary<float, const char*> hashTable;
+		hashTable.Add(3.5f, "16 Flindere St");
+		hashTable.Add(1.5f, "34 Swanston St");
+		hashTable.Add(5.7f, "22 Left St");
 
-		//std::cout << hastTable[3.5f] << std::endl;
-		//std::cout << hastTable[1.5f] << std::endl;
-		//std::cout << hastTable[5.7f] << std::endl;
+		std::cout << hashTable[3.5f] << std::endl;
+		std::cout << hashTable[1.5f] << std::endl;
+		std::cout << hashTable[5.7f] << std::endl;
 	}
 }
