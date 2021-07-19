@@ -37,13 +37,12 @@ public:
 		return m_pData[nIndex].value;
 	}
 
-	//Bad Hashing algorithm
 	unsigned int Hash(K key, int nSize)
 	{
 		unsigned int nHash = 0;
-		for (int i = 0; i < nSize; ++i)
+		for (unsigned int i = 0; i < nSize; ++i)
 		{
-			nHash += ((char*)&key)[i];
+			nHash = (nHash * 1313) + ((char*)&key)[i];
 		}
 		return nHash;
 	}
@@ -90,16 +89,16 @@ public:
 		return m_pData[nIndex].value;
 	}
 
-	//Bad hashing algorith
 	unsigned int Hash(const char* key, int nSize)
 	{
 		unsigned int nHash = 0;
-		for (int i = 0; i < nSize; ++i)
+		for (unsigned int i = 0; i < nSize; ++i)
 		{
-			nHash += ((char*)&key)[i];
+			nHash = (nHash * 1313) + ((char*)&key)[i];
 		}
 		return nHash;
 	}
+
 private:
 	Pair* m_pData;
 	int m_nTableSize;
